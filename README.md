@@ -36,3 +36,8 @@ To add the linker and join all contigs into a single sequence
 ```
 add_linker_to_contigs.py test.fasta NNN --singleseq > out.fa
 ```
+Generate concatinated pseudo Genome
+```
+grep -v ">"  out.fa  |  tr -d "\t\n\r" > temp.fa
+cat  temp.fa   | awk '{print ">out_pseudoGenome\n"$0}' > out_pseudoGenome_linker.fa && rm temp.fa
+```
