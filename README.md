@@ -13,8 +13,8 @@ Add the `add_linker_to_contigs.py` to your PATH in .bashrc
 
 USAGE
 =======
-`add_linker_to_contigs.py -h` to get help
-`add_linker_to_contigs.py  contig98_R.rasembonsis_final_sorted_size_replicate_copyNum.fa  NNNNNCACACACTTAATTAATTAAGTGTGTGNNNNN > out.fa` to add the linker to the contigs in a fasta file
+```add_linker_to_contigs.py -h``` to get help
+```add_linker_to_contigs.py  contig98_R.rasembonsis_final_sorted_size_replicate_copyNum.fa  NNNNNCACACACTTAATTAATTAAGTGTGTGNNNNN > out.fa``` to add the linker to the contigs in a fasta file
 
 1. Generate pseudo genome in one go
 `./add_linker_to_contigs.py  contig98_R.rasembonsis_final_sorted_size_replicate_copyNum.fa  NNNNNCACACACTTAATTAATTAAGTGTGTGNNNNN | grep -v ">" | tr -d "\t\n\r" > contig98_R.rasembonsis_final_pseudoGenome_linker.fa`
