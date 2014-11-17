@@ -11,7 +11,7 @@ import argparse
 __author__    = "Dereje Jima"
 __copyright__ = "Copyright 2014 Dereje Jima"
 __license__   = "Apache v2.0"
-__purpose__  = "Add a linker sequence to a contig at in a fasta file to reconstract pseudo genome"
+__purpose__  = "Add a linker sequence to a contig  in a fasta file to reconstract pseudo genome"
 
 from itertools import groupby
 def fasta_parse(fasta_name):
